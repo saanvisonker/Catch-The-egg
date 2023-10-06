@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catch The Egg</title>
-    <link rel="stylesheet" href="/html/style.css" />
+     <link rel="stylesheet" href="/Catch-The-egg/html/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +16,30 @@
     <div class="heading">
       <h1>Catch The Egg</h1>
     </div>
+    <div class="option">
+      <div class="btn">
+        <button><a href="/Catch-The-egg/html/start.html">Start Game</a></button>
+      </div>
 
-    <div id="option1" class="btn">
-      <button><a href="/html/start.html">Start Game</a></button>
+      <div class="popup" id="popup">
+        <div class="box">
+          <div class="content">
+            <div class="cross" onclick="popup()"><span>&times;</span></div>
+            <h1>Instructions</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+              obcaecati cupiditate non a iste, sunt temporibus debitis placeat
+              nostrum itaque modi, aperiam provident dolores in deserunt hic ea
+              voluptates tempore eius ex nulla officiis vero quod laboriosam.
+              Dicta, sit nobis?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="popup()">Instructions</button>
     </div>
-    <div id="option2" class="btn">
-      <button>About</button>
-    </div>
+    <script src="script.js"></script>
   </body>
+  <script src="/html/script.js"></script>
 </html>

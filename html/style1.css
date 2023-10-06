@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{background-image: url('/img/background2..jpg');
+body{
+    background-image: url("/Catch-The-egg/img/background2..jpg");
 background-repeat: no-repeat;
 background-size: cover;
 }

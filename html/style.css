@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-  background-image: url(/img/background.jpg);
+  background-image: url(/Catch-The-egg/img/background.jpg);
   background-repeat: no-repeat;
 background-size: cover;
 z-index: -1;
@@ -18,8 +18,8 @@ font-weight: bolder;
 text-align: center;
 }
 
-.btn button{
-background-image: url(/img/button.jpg);
+button{
+background-image: url(/Catch-The-egg/img/button.jpg);
 height: 100px;
 width: 270px;
 margin-left: 300px;
@@ -27,16 +27,73 @@ color: rgb(255, 255, 255);
 font-weight: bolder;
 font-size: 30px;
 border-radius: 30px;
+cursor: pointer;
+}
+.option{
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 30vh;
+margin-top: 60px;
 
 }
-#option1{
-margin-top: 90px;
-
-}
-#option1 a{
+.btn a{
 text-decoration: none;
 color: rgb(255, 255, 255);
 }
-#option2{
-margin-top: 60px;
+
+.popup .box{
+    position: fixed;
+     top: 100px;
+left: 120px; 
+    width: 50vw;
+    height: 50vh;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    background: rgb(123, 81, 3);
+    color: bisque;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup .cross{
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.popup span{
+    margin-top: 3.5px;
+}
+
+.popup.active .box{
+    display:block;
+
+}
+
+.popup.active .content{
+    transition: all .3s ease-in;
+    transform: translate(-50%,-50%) scale(1);
+
+
 }
