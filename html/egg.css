@@ -5,16 +5,21 @@
     overflow: hidden;
 }
 body{
-  background-image: url(/Catch-The-egg/img/background2.jpg);
+  background-image: url('../img/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
- 
+
 }
 .egg{
     height: 70px;
     width: 70px;
- background-image: url(/Catch-The-egg/img/egg.png);
+ background-image: url('../img/egg.png');
    background-size:cover ;
     position: absolute;
+    padding: 0px;
+  margin: 0px;
 } 
+
+
+

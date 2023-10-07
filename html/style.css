@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-  background-image: url(/Catch-The-egg/img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
 background-size: cover;
 z-index: -1;
@@ -14,15 +14,16 @@ z-index: -1;
     margin-top: 40px ;
     font-family: 'Rye';
 font-weight: bolder; 
-    font-size: 70px;
+    font-size: 3.8rem;
 text-align: center;
 }
 
 button{
-background-image: url(/Catch-The-egg/img/button.jpg);
+background-image: url(../img/button.jpg);
 height: 100px;
 width: 270px;
 margin-left: 300px;
+/* margin-bottom: 20px; */
 color: rgb(255, 255, 255);
 font-weight: bolder;
 font-size: 30px;
@@ -33,7 +34,7 @@ cursor: pointer;
     display: flex;
 flex-direction: column;
 justify-content: space-between;
-height: 30vh;
+height: 40vh;
 margin-top: 60px;
 
 }
