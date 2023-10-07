@@ -19,3 +19,23 @@ function generateeggs() {
     setTimeout(generateeggs, 2000);
 }
 generateeggs();
+
+
+
+function startTimer(duration, display) {
+    let timer = duration;
+    let countdownInterval = setInterval(function () {
+        display.textContent = timer ;
+
+        if (--timer < 0) {
+            clearInterval(countdownInterval);
+            display.textContent = 'Times up!';
+           
+        }
+    }, 1000);
+}
+
+
+const initialTime = 60;
+const countdownDisplay = document.getElementById('countdown');
+startTimer(initialTime, countdownDisplay);

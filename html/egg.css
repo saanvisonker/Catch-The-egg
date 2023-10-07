@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 body{
-  background-image: url(/Catch-The-egg/img/background2.jpg);
+  background-image: url(../img/background2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -14,9 +14,21 @@ body{
 .egg{
     height: 70px;
     width: 70px;
- background-image: url(/Catch-The-egg/img/egg.png);
+ background-image: url(../img/egg.png);
    background-size:cover ;
     position: absolute;
     padding: 0px;
   margin: 0px;
 } 
+.timer{
+  float: right;
+  color: rgb(255, 254, 254);
+  font-size: 30px;
+  background-image: url(../img/button.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  margin: 20px;
+padding: 20px;
+text-align: center;
+z-index: -1;
+}
