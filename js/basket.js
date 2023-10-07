@@ -1,7 +1,7 @@
 
 const basket = document.getElementById("basket");
 let x = 47;
-const move = 15;
+const move = 30;
 
 document.addEventListener("keydown", function (event) {
   const basket_img = basket.getBoundingClientRect();
