@@ -5,22 +5,14 @@ var x = 47;
 const move = 20;
 var score = 0;
 var lives = 3;
-const basketWidth = basket.clientWidth;
-const basketHeight = basket.clientHeight;
+
 
 function updateScoreAndLives() {
-    // Update the score and lives on the webpage
     document.getElementById("score").innerHTML = "Score: " + score;
-    // document.getElementById("lives").innerHTML = "Lives: " + lives;
-  
-    // Check if all lives are used up
-    // if (lives === 0) {
-    //   alert("Game Over. Your final score is: " + score);
-    //   // Handle game over logic here (e.g., restart the game).
-    // }
+   
+    
   }
   
-  // Initialize score and lives
   updateScoreAndLives();
 
 function generateeggs() {
@@ -35,15 +27,16 @@ function generateeggs() {
         eggBottom -= 10;
         egg.style.bottom = eggBottom + 'px';
     
-        // Check for collision with the basket
         var eggRect = egg.getBoundingClientRect();
         var basketRect = basket.getBoundingClientRect();
         
         if (eggRect.bottom >= basketRect.top && eggRect.left <= basketRect.right && eggRect.right >= basketRect.left) {
-            // Egg is in the basket
             score += 5;
             egg.remove();
             updateScoreAndLives();
+        }
+        else if (eggBottom<0){
+            egg.remove();
         }
         
     }
