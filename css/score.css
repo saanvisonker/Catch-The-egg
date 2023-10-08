@@ -2,4 +2,17 @@
     font-size: 1.6rem;
     font-family: 'Play', sans-serif;
     margin-left: 10px;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+
+p{
+    float: right;
+}
+#timer{
+    font-size: 1.6rem;
+    font-family: 'Play', sans-serif;
+   float: right;
+font-weight: bolder;
 }
