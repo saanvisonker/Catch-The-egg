@@ -23,7 +23,6 @@ background-image: url(../img/button.jpg);
 height: 100px;
 width: 270px;
 margin-left: 300px;
-/* margin-bottom: 20px; */
 color: rgb(255, 255, 255);
 font-weight: bolder;
 font-size: 30px;
@@ -44,9 +43,12 @@ margin-top: 60px;
     width: 50px;
   margin-top: 20px;
   margin-left:20px;
+  border-radius: 20px;
    font-size: 20px;
 
 }
+#play img{
+    height: 20px;}
 .btn a{
 text-decoration: none;
 color: rgb(255, 255, 255);
@@ -66,8 +68,8 @@ left: 120px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-    background: rgb(123, 81, 3);
-    color: bisque;
+    background: rgb(107, 74, 12);
+    color: rgb(255, 253, 250);
     width: 450px;
     height: 220px;
     z-index: 2;
@@ -106,4 +108,8 @@ left: 120px;
     transform: translate(-50%,-50%) scale(1);
 
 
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
 }

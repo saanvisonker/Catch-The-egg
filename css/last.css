@@ -51,6 +51,7 @@ button{
     align-content: center;
 border-radius: 10px;
 margin-top: 40px;
+margin-left: 40px;
 }
 button a{
     text-decoration: none;
@@ -58,3 +59,14 @@ button a{
     font-weight: bolder;
     font-size: 1.8rem;
 }
+#play{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  margin-top: 20px;
+  margin-left:20px;
+   font-size: 20px;
+
+}
+#play img{
+    height: 20px;}
