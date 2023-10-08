@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    color: #000000;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Arbutus', serif;
+font-family: 'Pixelify Sans';
+}
+.egg{
+float: right;
+justify-content: center;
+align-content: center;
+animation-name: egg;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes egg{
+    0%{
+      transform: translateY(-10vh);
+    }
+    50%{
+      transform: translateY(10vh);
+    }
+}
+.score{
+    display: block;
+ text-align: center;
+margin-left: 10px;
+margin-top: 10%;
+}
+.score h3{
+    font-size: 50px;
+    color: #ffffff;
+}
+button{
+    background-image: url(../img/button.jpg);
+    height: 50px;
+    width: 20%;
+    align-content: center;
+border-radius: 10px;
+margin-top: 40px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}

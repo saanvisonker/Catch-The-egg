@@ -5,7 +5,7 @@ var x = 47;
 const move = 20;
 var score = 0;
 var lives = 3;
-
+//score
 
 function updateScoreAndLives() {
     document.getElementById("score").innerHTML = "Score: " + score;
@@ -15,6 +15,7 @@ function updateScoreAndLives() {
   
   updateScoreAndLives();
 
+  //eggs
 function generateeggs() {
     var eggBottom = 500;
     var eggLeft = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -46,6 +47,7 @@ function generateeggs() {
     setTimeout(generateeggs, 1500);
 }
 generateeggs();
+//basket
 
 document.addEventListener("keydown", function (event) {
     const basket_img = basket.getBoundingClientRect();
@@ -59,3 +61,23 @@ document.addEventListener("keydown", function (event) {
         basket.style.left = `${basket_img.left + move}px`;
     }
 });
+
+//timer
+
+function startTimer(duration, display) {
+    let timer = duration;
+    let countdownInterval = setInterval(function () {
+        display.textContent = timer + ' seconds';
+
+        if (--timer < 0) {
+            clearInterval(countdownInterval);
+            display.textContent = 'Times up!';
+           
+        }
+    }, 1000);
+}
+
+
+const initialTime = 60;
+const countdownDisplay = document.getElementById('countdown');
+startTimer(initialTime, countdownDisplay);
