@@ -1,0 +1,101 @@
+*{
+    padding :0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+}
+.heading{
+    color: #2e1506;
+    margin-top: 40px ;
+    font-family: 'Rye';
+font-weight: bolder; 
+    font-size: 3.8rem;
+text-align: center;
+}
+
+button{
+background-image: url(../img/button.jpg);
+height: 100px;
+width: 270px;
+margin-left: 300px;
+/* margin-bottom: 20px; */
+color: rgb(255, 255, 255);
+font-weight: bolder;
+font-size: 30px;
+border-radius: 30px;
+cursor: pointer;
+}
+.option{
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 40vh;
+margin-top: 60px;
+
+}
+.btn a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.popup .box{
+    position: fixed;
+     top: 100px;
+left: 120px; 
+    width: 50vw;
+    height: 50vh;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    background: rgb(167, 118, 27);
+    color: bisque;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.popup .cross{
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.popup span{
+    margin-top: 3.5px;
+}
+
+.popup.active .box{
+    display:block;
+
+}
+
+.popup.active .content{
+    transition: all .3s ease-in;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
