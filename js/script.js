@@ -3,5 +3,5 @@ function popup(){
 
 }
 const audio = new Audio();
-audio.src = "../sound/starting.mp3";
+audio.src = "./sound/starting.mp3";
 
