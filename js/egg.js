@@ -11,9 +11,7 @@ function generateeggs() {
     function fall() {
         eggBottom -= 10
         egg.style.bottom = eggBottom + 'px';
-    }
-
-    egg.style.left = eggLeft + 'px'; 
+        egg.style.left = eggLeft + 'px'; }
     setInterval(fall, 30);
    
     setTimeout(generateeggs, 2000);
@@ -30,7 +28,6 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             clearInterval(countdownInterval);
             display.textContent = 'Times up!';
-           
         }
     }, 1000);
 }
