@@ -34,6 +34,7 @@ function generateeggs() {
         if (eggRect.bottom >= basketRect.top && eggRect.left <= basketRect.right && eggRect.right >= basketRect.left) {
             score += 5;
             egg.remove();
+            finalscore = score ;
             updateScoreAndLives();
         }
         else if (eggBottom<0){
@@ -67,7 +68,7 @@ document.addEventListener("keydown", function (event) {
 function startTimer(duration, display) {
     let timer = duration;
     let countdownInterval = setInterval(function () {
-        display.textContent = timer + ' seconds';
+        display.textContent = timer + '';
 
         if (--timer < 0) {
             clearInterval(countdownInterval);
@@ -81,3 +82,8 @@ function startTimer(duration, display) {
 const initialTime = 60;
 const countdownDisplay = document.getElementById('countdown');
 startTimer(initialTime, countdownDisplay);
+
+function finalscore(){
+    document.getElementById("finalscore").innerHTML="score:" + finalscore;
+}
+finalscore();
