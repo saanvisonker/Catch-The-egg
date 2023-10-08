@@ -5,15 +5,26 @@ var x = 47;
 const move = 20;
 var score = 0;
 var lives = 3;
+
+
+
+
+
+
 //score
 
 function updateScoreAndLives() {
     document.getElementById("score").innerHTML = "Score: " + score;
+
    
     
   }
   
   updateScoreAndLives();
+
+  
+
+
 
   //eggs
 function generateeggs() {
@@ -35,6 +46,8 @@ function generateeggs() {
             score += 5;
             egg.remove();
             updateScoreAndLives();
+            var finalscore =score;
+            finalscore();
         }
         else if (eggBottom<0){
             egg.remove();
@@ -81,3 +94,7 @@ function startTimer(duration, display) {
 const initialTime = 60;
 const countdownDisplay = document.getElementById('countdown');
 startTimer(initialTime, countdownDisplay);
+
+
+
+

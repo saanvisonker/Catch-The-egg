@@ -28,10 +28,10 @@ animation-iteration-count: infinite;
 
 @keyframes egg{
     0%{
-      transform: translateY(-10vh);
+      transform: translateY(0vh);
     }
     50%{
-      transform: translateY(10vh);
+      transform: translateY(-20vh);
     }
 }
 .score{
