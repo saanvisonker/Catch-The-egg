@@ -73,8 +73,13 @@ left: 120px;
     width: 450px;
     height: 220px;
     z-index: 2;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
+    border-radius: 30px;
+}
+
+.popup .content h1{
+    text-align: center;
 }
 
 .popup .cross{
@@ -110,6 +115,6 @@ left: 120px;
 
 }
 ul{
-    list-style: none;
+    /* list-style: none; */
     margin-top: 20px;
 }
