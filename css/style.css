@@ -68,14 +68,15 @@ left: 120px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-    background: rgb(107, 74, 12);
+    background: rgb(174, 118, 14);
     color: rgb(255, 253, 250);
     width: 450px;
     height: 220px;
     z-index: 2;
-    /* text-align: center; */
+    text-align: center;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
 }
 
 .popup .content h1{
@@ -115,6 +116,6 @@ left: 120px;
 
 }
 ul{
-    /* list-style: none; */
+    list-style: none;
     margin-top: 20px;
 }
