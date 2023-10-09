@@ -23,24 +23,57 @@
       <button><a href="../html/start.html">Start Game</a></button> 
       </div>
 
-      <div class="popup" id="popup">
-        <div class="box">
-          <div class="content">
-            <div class="cross" onclick="popup()"><span>&times;</span></div>
-            <h1>Instructions</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-              obcaecati cupiditate non a iste, sunt temporibus debitis placeat
-              nostrum itaque modi, aperiam provident dolores in deserunt hic ea
-              voluptates tempore eius ex nulla officiis vero quod laboriosam.
-              Dicta, sit nobis?
-            </p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catch The Egg</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arbutus&family=Bowlby+One+SC&family=Creepster&family=Dancing+Script&family=Dela+Gothic+One&family=Fascinate+Inline&family=Fredericka+the+Great&family=Lemon&family=Rubik+Mono+One&family=Rye&family=Tilt+Prism&family=Tourney:wght@100&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <button id="play" onclick="audio.play();">
+    <img src="../img/sound icon.png">
+  </button>
+  <div class="heading">
+    <h1>Catch The Egg</h1>
+  </div>
+  <div class="option">
+    <div class="btn">
+      <button><a href="../html/start.html">Start Game</a></button>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="box">
+        <div class="content">
+          <div class="cross" onclick="popup()"><span>&times;</span></div>
+          <h1>Instructions</h1>
+          <p>
+          <ul>
+            <li>
+              Click on start game to start the game
+            </li>
+            <li>
+              Collect the eggs in the basket
+            </li>
+            <li>
+              +5 points for each egg will be awarded </li>
+            <li>
+              Time limit is of 60 seconds </li>
+          </ul>
+          </p>
         </div>
       </div>
-
-      <button onclick="popup()">Instructions</button>
     </div>
-  </body>
+
+    <button onclick="popup()">Instructions</button>
+  </div>
   <script src="../js/script.js"></script>
+</body>
+
 </html>

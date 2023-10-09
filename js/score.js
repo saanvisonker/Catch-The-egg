@@ -5,15 +5,21 @@ var x = 47;
 const move = 20;
 var score = 0;
 var lives = 3;
+
 //score
 
 function updateScoreAndLives() {
     document.getElementById("score").innerHTML = "Score: " + score;
+
    
     
   }
   
   updateScoreAndLives();
+
+  
+
+
 
   //eggs
 function generateeggs() {
@@ -34,8 +40,9 @@ function generateeggs() {
         if (eggRect.bottom >= basketRect.top && eggRect.left <= basketRect.right && eggRect.right >= basketRect.left) {
             score += 5;
             egg.remove();
-            finalscore = score ;
             updateScoreAndLives();
+            var finalscore =score;
+            finalscore();
         }
         else if (eggBottom<0){
             egg.remove();
@@ -68,7 +75,7 @@ document.addEventListener("keydown", function (event) {
 function startTimer(duration, display) {
     let timer = duration;
     let countdownInterval = setInterval(function () {
-        display.textContent = timer + '';
+        display.textContent = timer ;
 
         if (--timer < 0) {
             clearInterval(countdownInterval);
@@ -83,7 +90,5 @@ const initialTime = 60;
 const countdownDisplay = document.getElementById('countdown');
 startTimer(initialTime, countdownDisplay);
 
-function finalscore(){
-    document.getElementById("finalscore").innerHTML="score:" + finalscore;
-}
-finalscore();
+
+
